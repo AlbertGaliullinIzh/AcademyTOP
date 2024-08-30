@@ -17,8 +17,9 @@
                     <h4>ВЗН УП (Расход)</h4>
                 </div>
                 <div class="header-content-right">
-                    <button onclick="window.location.href='filter.html'"> <img class="img-buttons" src="sourses/but-search.png" /> Поиск</button>
-                    <button> <img class="img-buttons" src="sourses/but-create.png"/>Создать</button>
+                    <button onclick="window.location.href='filter.html'"> <img class="img-buttons"
+                            src="sourses/but-search.png" /> Поиск</button>
+                    <button> <img class="img-buttons" src="sourses/but-create.png" />Создать</button>
                 </div>
             </div>
         </div>
@@ -43,10 +44,10 @@
     </div>
     <script>
         const mainDiv = document.getElementById('main-content-list');
-        for (let i = 1; i <= 7; i++) {            
+        for (let i = 1; i <= 7; i++) {
             let elem_lists = document.createElement('div');
             elem_lists.className = 'elem_lists';
-            
+
             const p = document.createElement('p');
             p.textContent = "ВЗН №132313"
             p.className = "elem_list_name"
@@ -65,7 +66,7 @@
             elem_lists.appendChild(p3);
             mainDiv.appendChild(elem_lists);
         }
-        
+
     </script>
 </body>
 
