@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="head.css">
+    <link rel="stylesheet" href="list.css">
+</head>
+
+<body>
+    <div class="main-content">
+        <div class="main">
+            <div class="header-content">
+                <div class="header-content-left">
+                    <h4>ВЗН УП (Расход)</h4>
+                </div>
+                <div class="header-content-right">
+                    <button onclick="window.location.href='filter.html'"> <img class="img-buttons" src="sourses/but-search.png" /> Поиск</button>
+                    <button> <img class="img-buttons" src="sourses/but-create.png"/>Создать</button>
+                </div>
+            </div>
+        </div>
+        <div id="main-content-list">
+
+        </div>
+    </div>
+    </div>
+    <div class="nav-footer-bar">
+        <div class="segment" onclick="window.location.href='menu.html'">
+            <img class="img-menu" src="sourses/Menu.png" alt="Меню" />
+            <p>Меню</p>
+        </div>
+        <div class="segment">
+            <img class="img-menu" src="sourses/Vector.png" alt="Сканер" />
+            <p>Сканер</p>
+        </div>
+        <div class="segment" onclick="window.location.href='filter.html'">
+            <img class="img-menu" src="sourses/Back.png" alt="Назад" />
+            <p>Назад</p>
+        </div>
+    </div>
+    <script>
+        const mainDiv = document.getElementById('main-content-list');
+        for (let i = 1; i <= 7; i++) {            
+            let elem_lists = document.createElement('div');
+            elem_lists.className = 'elem_lists';
+            
+            const p = document.createElement('p');
+            p.textContent = "ВЗН №132313"
+            p.className = "elem_list_name"
+            elem_lists.appendChild(p)
+
+            const p1 = document.createElement('p');
+            p1.textContent = `Отправитель: Цех 01 / участок Цеха 01`;
+            elem_lists.appendChild(p1);
+
+            const p2 = document.createElement('p');
+            p2.textContent = `Получатель: Цех 02 / участок Цеха 02`;
+            elem_lists.appendChild(p2);
+
+            const p3 = document.createElement('p');
+            p3.textContent = `Дата выдачи 15.06.2024`;
+            elem_lists.appendChild(p3);
+            mainDiv.appendChild(elem_lists);
+        }
+        
+    </script>
+</body>
+
+</html>
