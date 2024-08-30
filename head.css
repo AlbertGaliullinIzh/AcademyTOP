@@ -53,23 +53,11 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.elem-lists{
-    display: flex;
-    width: 100vh;
-    height: 40px;
-    align-items: center;
-}
-.elem-lists-accouting{
-    display: flex;
-    width: 100vh;
-    height: 40px;
-    align-items: center;
-    font-family: 'Roboto';
-    font-size: 20px;
-    margin: 7px;
 
+    font-size: 12px;
+    font-family: 'Roboto';
 }
+
 .img-elem-lists{
     margin: 10px;
 }
@@ -84,10 +72,16 @@ body{
 
 p{
     margin: 0;
-    font-size: 12px;
-    font-family: 'Roboto';
+    
 }
 img{
   height: 21px;
   width: 21px;  
+}
+.elem-lists{
+    display: flex;
+    width: 100vh;
+    height: 40px;
+    align-items: center;
+    font-size: 14px;
 }
